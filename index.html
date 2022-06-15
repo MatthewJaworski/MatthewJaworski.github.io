@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CSSRulePlugin.min.js"
+		integrity="sha512-oYnRsy+bFXYr+btXcKk2dpzfERnCUc5G4GkJ0AO/XSvomLV7Xc7tZVhTsYIz9QzOAw9qo/6qoA6JTpzaYuHUGg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<figure class="preloader">
+		<div class="preloader__containter">
+			<svg class="preloader__logo" width="100%" viewBox="0 0 190 101" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path class="logo__m"
+					d="M90.7084 10.2016V19.1539L88.04 27.3439L64.683 99.1591H61.9916C55.2224 99.1591 52.1266 94.631 49.851 88.6935L21.9081 16.2776H21.3305V71.7707C21.3305 91.9626 21.9081 96.9066 37.2946 96.9066H40.6792V99.1591H1V96.9066H2.55945C17.946 96.4792 18.5235 90.253 18.5235 71.6321V14.0251C18.5235 5.83514 14.134 3.87139 5.53972 3.87139V1.61887H48.3147L72.7228 65.4174L85.106 27.3439L90.7084 10.2016Z"
+					stroke="#1A2535" stroke-width="2" stroke-miterlimit="10" />
+				<path class="logo__t"
+					d="M94.1635 4.05044C81.6821 4.91449 75.2249 16.5087 71.9847 27.4536H66.8478V1.72168H145.771V21.1881L140.658 27.4525C137.993 18.5475 133.217 9.21047 124.839 5.58563C122.608 4.60145 120.11 4.02502 117.351 3.97766V97.0152H123.664V99.2712H87.0108V97.0152H94.1635V4.43395V4.05044V4.05044Z"
+					stroke="#1A2535" stroke-width="2" stroke-miterlimit="10" />
+				<path class="logo__k"
+					d="M182.728 97.0152L149.171 33.8139L148.067 31.7254L146.602 28.9646L147.827 27.4525L149.171 25.7718L150.467 24.1638L156.66 16.4832L159.709 12.7152C161.149 10.9628 162.637 9.42647 164.365 8.1304C167.87 5.514 172.214 3.97766 178.479 3.97766V1.72168H153.347V4.67423C155.147 5.13051 156.204 5.87441 156.66 7.02609C156.828 7.45812 156.9 7.93866 156.9 8.49082C156.9 9.01872 156.829 9.57086 156.66 10.1715C156.18 11.9239 154.979 13.9639 153.084 16.3885L149.267 21.0692L149.171 21.1893V21.187L137.415 35.609L128.24 46.8727L120.751 56.0654V60.7218L127.808 51.9612L128.24 52.8737L129.2 54.8894L149.41 97.0152H140.505V99.2712H188.368V97.0152H182.728V97.0152Z"
+					stroke="#1A2535" stroke-width="2" stroke-miterlimit="10" />
+			</svg>
+		</div>
+	</figure>
+	<header>
+		<div class="header__container">
+			<div class="header__logo">
+				<img class="logo__img" src="src/Logo.svg" alt="Logo MTK">
+			</div>
+			<div class=" header__brand-name--wrapper">
+				<strong class="header__brand-name"=>
+					Marzena Teklińska-Krak
+				</strong>
+			</div>
+			<div class="header__contact">
+				<Button focusable="none" class="btn btn--primary">
+					<a class="btn__link" href="#">Kontakt</a>
+				</Button>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="home">
+			<div class="home__content">
+				<div class="intro-text">
+					<h1 class="intro-text__slogan"> Czas na rzeczy, które się <strong
+							class="intro-text__slogan--strong">liczą</strong>.
+					</h1>
+					<p class="intro-text__description">
+						Zapewnię Ci spokój pomimo Polskiego Ładu.
+					</p>
+				</div>
+				<a class="home__goto" href="#consulting">
+					<img focusable="true" class="home__goto--icon" src="src/arrow-down.svg" alt="scroll down">
+				</a>
+			</div>
+		</section>
+		<section class="consulting" id="consulting">
+			<div class="consulting__content">
+				<div class="consulting__left">
+					<img class="consulting__img--left" src="/src/photo1.jpg" alt="">
+
+					<p class="consulting__description--left">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officiis perspiciatis
+						omnis natus enim illum, rerum culpa dolor at accusantium minus nisi reprehenderit, earum
+						dolores?
+					</p>
+				</div>
+				<div class="consulting__right">
+					<h2 class="consulting__heading--right">Kompleksowe doradztwo </h2>
+					<img class="consulting__img--left" src="/src/photo2.jpg" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="worries">
+			<div class="worries__background">
+			</div>
+			<div class="worries__content">
+				<h3 class="worries__heading">Brak zmartwień</h3>
+				<p class="worries__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia natus
+					ipsa vero ex.</p>
+			</div>
+
+		</section>
+		<section class="price">
+			<div class="price__content">
+				<div class="price__text">
+					<h4 class="price__heading">Cennik</h4>
+					<p class="price__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a
+						corrupti. Minus doloribus ratione odit, aspernatur est placeat ad esse ipsam id amet commodi.
+					</p>
+				</div>
+				<div class="price__price-cards">
+					<div class="price-cards__card">
+						<p class="card__heading">Ryczałt</p>
+						<ul class="card__price-list">
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+						</ul>
+					</div>
+					<div class="price-cards__card">
+						<p class="card__heading">Księga przychodow i rozchodow z VAT</p>
+						<ul class="card__price-list">
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+						</ul>
+					</div>
+					<div class="price-cards__card">
+						<p class="card__heading">Księga przychodow i rozchodow bez VAT</p>
+						<ul class="card__price-list">
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+						</ul>
+					</div>
+					<div class="price-cards__card">
+						<p class="card__heading">Pełna księgowość</p>
+						<ul class="card__price-list">
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+							<li class="price-list__element">
+								100zł <span>-5 faktur</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		<section class="marquee">
+			<div class="marquee__content">
+				<h5 class="marquee__header">Firmy, które mi zaufały.</h5>
+				<div class="slide__wrapper">
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/Accenture Logo.svg " alt="Accenture logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/nike_logo.svg" alt="Nike logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/samsung logo.svg" alt="Samsung Logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/Apple Logo.svg" alt="Apple logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/Accenture Logo.svg " alt="Accenture logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/nike_logo.svg" alt="Nike logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/samsung logo.svg" alt="Samsung Logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/Apple Logo.svg" alt="Apple logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/Accenture Logo.svg " alt="Accenture logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/nike_logo.svg" alt="Nike logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/samsung logo.svg" alt="Samsung Logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/Apple Logo.svg" alt="Apple logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/Accenture Logo.svg " alt="Accenture logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/nike_logo.svg" alt="Nike logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/samsung logo.svg" alt="Samsung Logo">
+					</figure>
+					<figure class="slide__item">
+						<img class="slide__item--logo" src="src/Apple Logo.svg" alt="Apple logo">
+					</figure>
+
+				</div>
+
+			</div>
+		</section>
+		<section class="location">
+			<div class="location__content">
+				<h6 class="location__description">Znajdziesz mnie tutaj</h6>
+				<div class="map">
+					<iframe width="100%" height="100%"
+						src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=17&ie=UTF8&iwloc=&output=embed"
+						frameborder="0" scrolling="yes"></iframe>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer__content">
+			<div class="footer__content--left">
+				<div class="footer__logo">
+					<img class="footer__img" src="src/Logo--white.svg" alt="MTK logo">
+					<div class="footer__brand-name">
+						<p>Marzena</p>
+						<p>Teklińska</p>
+						<p>Krak</p>
+					</div>
+				</div>
+				<button class="btn footer__button--mail">
+					<a class="footer__mail-link"
+						href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Kontakt%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!">Skontaktuj
+						się ze mną</a>
+					<img class="footer__mail-link--img" src="src/arrow-left.svg" alt="arrow">
+				</button>
+
+			</div>
+			<div class="footer__content--right">
+				<span class="footer__slogan">
+					Czas na rzeczy, które się liczą.
+				</span>
+				<div class="footer__contact">
+
+					<address class="footer__contact--item">Lask 99-999 ul.exmpl 99.</address>
+
+					<div class="footer__contact--item">
+						<p>999 999 999</p>
+					</div>
+					<div class="footer__contact--item">
+						<p>example@example.pl</p>
+					</div>
+				</div>
+				<div class="copy">
+					<span class="copy__text">
+						Designed and developed by Mateusz Jaworski.
+					</span>
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
+</body>
+<script src="app.js"></script>
+
+</html>
